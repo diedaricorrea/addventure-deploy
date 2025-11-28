@@ -1,0 +1,35 @@
+# Archivos a ignorar al construir imágenes Docker
+
+# Backend
+addventure-backend/target/
+addventure-backend/.mvn/
+addventure-backend/mvnw
+addventure-backend/mvnw.cmd
+addventure-backend/uploads/*
+!addventure-backend/uploads/.gitkeep
+
+# Frontend
+addventure-fronted/node_modules/
+addventure-fronted/dist/
+addventure-fronted/.angular/
+
+# Git
+.git/
+.gitignore
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Documentación
+*.md
+!README.md
+
+# Variables de entorno
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
