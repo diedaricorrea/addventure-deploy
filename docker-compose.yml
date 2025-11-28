@@ -27,7 +27,7 @@ services:
   # Backend Spring Boot
   backend:
     build:
-      context: ./addventure-backend
+      context: ./addventurebackend-deploy
       dockerfile: Dockerfile
     container_name: addventure-backend
     restart: unless-stopped
@@ -60,7 +60,7 @@ services:
   # Frontend Angular con Nginx
   frontend:
     build:
-      context: ./addventure-fronted
+      context: ./addventurefronted-deploy
       dockerfile: Dockerfile
     container_name: addventure-frontend
     restart: unless-stopped
