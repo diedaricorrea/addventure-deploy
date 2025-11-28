@@ -67,8 +67,8 @@ services:
     depends_on:
       - backend
     ports:
-      - "80:80"
-      - "443:443"  # Para HTTPS futuro
+      - "8081:80"  # Puerto externo 8081 porque 80 está ocupado
+      - "8443:443"  # Para HTTPS futuro
     networks:
       - addventure-network
     healthcheck:
