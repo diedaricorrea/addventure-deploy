@@ -15,7 +15,7 @@ services:
       - mysql_data:/var/lib/mysql
       - ./init-db:/docker-entrypoint-initdb.d  # Scripts SQL iniciales
     ports:
-      - "3306:3306"
+      - "3307:3306"  # Puerto externo 3307 porque 3306 está ocupado
     networks:
       - addventure-network
     healthcheck:
