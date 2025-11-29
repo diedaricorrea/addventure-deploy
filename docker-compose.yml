@@ -59,9 +59,7 @@ services:
 
   # Frontend Angular con Nginx
   frontend:
-    build:
-      context: ./addventurefronted-deploy
-      dockerfile: Dockerfile
+    image: diedaricode/addventure-frontend:latest
     container_name: addventure-frontend
     restart: unless-stopped
     depends_on:
